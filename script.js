@@ -120,7 +120,7 @@ function getLocation() {
         navigator.geolocation.getCurrentPosition(showPosition);
     }
     else {
-        //HW - show an alert for no gelolocation support available
+        alert("Geolocation is not supported by your browser.");
     }
 }
 
