@@ -82,8 +82,8 @@ async function fetchUserWeatherInfo(coordinates) {
     }
     catch(err) {
         loadingScreen.classList.remove("active");
-        //HW
-
+        alert("Failed to fetch weather data based on your location. Please check your internet connection or try again later.");
+        console.error("Error fetching user location weather data:", err);
     }
 
 }
