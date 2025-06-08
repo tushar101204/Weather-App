@@ -166,6 +166,9 @@ async function fetchSearchWeatherInfo(city) {
         renderWeatherInfo(data);
     }
     catch(err) {
-        //hW
+        loadingScreen.classList.remove("active");
+        alert("Failed to fetch weather data. Please check the city name or try again later.");
+        console.error("Error fetching weather data:", err);
     }
+
 }
